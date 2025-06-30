@@ -1,0 +1,4 @@
+# Add your project dependencies here, one per line. 
+PyQt5
+keyboard
+pyinstaller 

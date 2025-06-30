@@ -1,0 +1,96 @@
+# Schaalfactor voor tekst
+3
+# Transparantie van de achtergrond
+0.7
+# Linkermarge in pixels 
+300
+# Bovenmarge in pixels
+300
+# Schaal van het logo
+2
+
+# Hier beginnen de slides
+
+3 YEARS OF EXPERIENCE WITH UNREAL FLUID DYNAMICS
+- Henk Massink
+- Lecturer Civil Engineering
+- ICTO coach
+- Fluid Dynamics nerd
+- Unreal Engine nerd
+
+
+THE PROGRAM
+- The original idea
+- The development process
+- The technical stuff
+- The "summative" use in education (over three years)
+- The ups and downs
+- The future
+
+THE ORGINAL IDEA
+- Civil Engineering is outside
+- Often huge projects (dikes, ditches, rivers, canals)
+- Difficult to do real scale in a lab
+- 3D VR learning environment
+- Multiplayer
+- One has to do things (for example measure dimensions)
+- Effect of changes is made visible immediately
+- Show pressure and energy head
+
+THE DEVELOPMENT PROCESS
+- 2010 Learning in 3D
+- 2013 – 2014 Master learning and innovation (open simulator)
+- 2016 Unreal Engine
+- 1 day a week plus 
+- 2019 Unreal Academy and Udemy courses
+- 2020 Epic MegaGrant and unreal guru cedric
+- 2 day’s a week 
+- 2021 and 2022 Gamedesigner Sander
+- 2022 – 2025 Used in course Water 2
+
+THE TECHNICAL STUFF
+- Unreal Engine 5
+- Blueprints and a lot of C++
+- Jetbrains Rider + github copilot  (free for educators)
+- Server and Clients (dedicated server)
+- 1 Avans windows server Unreal
+- 1 Avans windows server MongoDB 
+- Client available on itch.io
+
+THE "SUMMATIVE" USE IN EDUCATION (OVER THREE YEARS)
+- Course Water 2 (3 credits)
+- 5 assignments , groups of three
+- 5 day’s including feedback (dag van de student)
+- Summative
+- 150 CT students
+
+THE UPS AND DOWNS
+- Don’t call it a game, it is a learning environment. 
+- Serious gaming is worse.
+- Formative is fun, Summative is not, it is about credits.
+- Students behave totally different in a 3D world. They go crazy
+- At first, they love it, and than it gets obligatory
+- Feedbackclass works
+
+THE UPS AND DOWNS
+- Updates, students get annoyed 
+- Last minute changes, don’t do it
+- Students always believe the system
+- Something different / new, not all students like it
+- Support through teams, does not work. One should be present physically for help.
+- Most students don’t watch instruction video’s 
+
+THE UPS AND DOWNS
+- I believe in Tpack (knowledge, education, technology) 
+- Luckly, I did not know how much time :-)
+- I get energy from the project; I am a bit crazy
+- College's have other priorities
+
+THE FUTURE
+- My retirement 1-1-2026
+- Convai avatars
+- Worldwide accessible 
+
+THE QUESTIONS?
+- Thanks for being here
+
