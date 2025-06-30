@@ -1,6 +1,12 @@
+# Disclaimer
+
+Deze software wordt aangeboden zoals deze is, zonder enige vorm van garantie. Het gebruik van deze applicatie is volledig op eigen risico. De maker aanvaardt geen enkele aansprakelijkheid voor directe of indirecte schade, verlies van gegevens, of andere gevolgen die voortvloeien uit het gebruik van deze app, ongeacht de oorzaak daarvan. Door deze software te gebruiken, stemt u ermee in dat u de volledige verantwoordelijkheid draagt voor eventuele gevolgen.
+
 # Presentatie Overlay App
 
 Deze applicatie biedt een transparante overlay voor presentaties, waarmee je eenvoudig tekstslides en een logo over je scherm kunt tonen. Ideaal voor docenten, sprekers of iedereen die tijdens een presentatie extra informatie zichtbaar wil maken zonder het hoofdscherm te blokkeren.
+
+## Gebouwd met Cursor.ai
 
 ## Functionaliteit
 - **Transparante overlay:** Toont tekstslides en een logo over elk ander venster.
@@ -26,6 +32,7 @@ Deze applicatie biedt een transparante overlay voor presentaties, waarmee je een
    ```sh
    pyinstaller overlay_text.py --onefile --noconsole --add-data "Avans.svg;."
    # Of gebruik build_overlay.bat
+   Je moet de slides.txt copieren naar de dist map!!
    ```
 
 ## Gebruik
@@ -39,8 +46,8 @@ Deze applicatie biedt een transparante overlay voor presentaties, waarmee je een
    - Gebruik pijltjestoetsen (links/rechts) om slides te wisselen.
    - `Esc` sluit de overlay.
    - `Home`/`End` naar eerste/laatste slide.
-   - `T` of `Ctrl+Alt+T` (globale sneltoets) schakelt click-through aan/uit.
-   - Via het systeemvak-icoon kun je de overlay sluiten of click-through wisselen.
+   - `T` of `Ctrl+Alt+T` (globale sneltoets) schakelt click-through aan/uit. Werkt bij mij niet
+   - Via het systeemvak-icoon kun je de overlay sluiten of click-through wisselen. Werkt bij mij wel
 
 ## Tips
 - **Logo aanpassen:** Vervang `Avans.svg` door je eigen logo (SVG aanbevolen).
