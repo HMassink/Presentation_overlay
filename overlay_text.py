@@ -45,7 +45,7 @@ else:
 class TextOverlay(QWidget):
     def __init__(self):
         super().__init__()
-        self.scale_factor, self.transparency_factor, self.margin_left, self.margin_top, self.logo_scale, self.text_slides = self.load_config_and_slides("slides.txt")
+        self.scale_factor, self.transparency_factor, self.margin_left, self.margin_top, self.logo_scale, self.screen_index, self.text_slides = self.load_config_and_slides("slides.txt")
         self.current_slide = 0
         self.click_through = False
         self.setup_ui()
@@ -57,12 +57,13 @@ class TextOverlay(QWidget):
         margin_left = 60
         margin_top = 0
         logo_scale = 1.0
+        screen_index = 0
         slides = []
         if not os.path.exists(filename):
-            return scale, transparency, margin_left, margin_top, logo_scale, [["Geen slides gevonden", []]]
+            return scale, transparency, margin_left, margin_top, logo_scale, screen_index, [["Geen slides gevonden", []]]
         with open(filename, encoding="utf-8") as f:
             lines = [l for l in f.readlines() if not l.strip().startswith('#')]
-        # Check for scale, transparency, margin_left, margin_top, logo_scale on first lines
+        # Check for scale, transparency, margin_left, margin_top, logo_scale, screen_index on first lines
         if lines and lines[0].strip().replace('.', '', 1).isdigit():
             scale = float(lines[0].strip())
             lines = lines[1:]
@@ -78,6 +79,9 @@ class TextOverlay(QWidget):
         if lines and lines[0].strip().replace('.', '', 1).isdigit():
             logo_scale = float(lines[0].strip())
             lines = lines[1:]
+        if lines and lines[0].strip().isdigit():
+            screen_index = int(lines[0].strip())
+            lines = lines[1:]
         content = ''.join(lines)
         raw_slides = [s.strip() for s in content.split("\n\n") if s.strip()]
         for raw in raw_slides:
@@ -87,7 +91,7 @@ class TextOverlay(QWidget):
             title = lns[0].strip()
             bullets = [l[2:].strip() for l in lns[1:] if l.strip().startswith("-") or l.strip().startswith("*")]
             slides.append([title, bullets])
-        return scale, transparency, margin_left, margin_top, logo_scale, slides
+        return scale, transparency, margin_left, margin_top, logo_scale, screen_index, slides
 
     def setup_ui(self):
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool)
@@ -131,8 +135,15 @@ class TextOverlay(QWidget):
         self.status_label.setAttribute(Qt.WA_TranslucentBackground)
         self.status_label.setFocusPolicy(Qt.NoFocus)
 
-        # Maak het venster schermvullend
-        screen = QApplication.primaryScreen()
+        # Maak het venster schermvullend op het gekozen scherm
+        app = QApplication.instance()
+        screens = app.screens()
+        if len(screens) == 1:
+            screen = app.primaryScreen()
+        elif 0 <= self.screen_index < len(screens):
+            screen = screens[self.screen_index]
+        else:
+            screen = app.primaryScreen()
         rect = screen.geometry()
         self.setGeometry(rect)
         self.setFocusPolicy(Qt.StrongFocus)
