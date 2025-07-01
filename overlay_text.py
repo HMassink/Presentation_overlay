@@ -161,8 +161,8 @@ class TextOverlay(QWidget):
         if 0 <= slide_index < len(self.text_slides):
             self.current_slide = slide_index
             title, bullets = self.text_slides[slide_index]
-            tsize = int(53 * self.scale_factor)
-            bsize = int(16 * self.scale_factor)
+            tsize = int(50 * self.scale_factor)
+            bsize = int(25 * self.scale_factor)
             html = f'<div style="text-align:left;">'
             html += f'<div style="color:#b71234;font-family:Arial,sans-serif;font-size:{tsize}px;font-weight:bold;font-style:italic;margin-bottom:32px;">{title}</div>'
             if bullets:
