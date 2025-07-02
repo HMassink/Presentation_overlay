@@ -269,8 +269,48 @@ class TextOverlay(QWidget):
             self.setFocus()
             self.activateWindow()
 
+def show_intro_image(image_path):
+    class IntroWindow(QWidget):
+        def __init__(self, image_path):
+            super().__init__()
+            self.setWindowFlags(Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
+            self.setWindowState(Qt.WindowFullScreen)
+            self.setStyleSheet("background: black;")
+            label = QLabel(self)
+            self.label = label
+            label.setAlignment(Qt.AlignCenter)
+            pixmap = QPixmap(image_path)
+            if not pixmap.isNull():
+                screen = QApplication.primaryScreen()
+                rect = screen.geometry()
+                scaled = pixmap.scaled(rect.width(), rect.height(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
+                label.setPixmap(scaled)
+            else:
+                label.setText("dia1.jpg niet gevonden")
+                label.setStyleSheet("color: white; font-size: 48px;")
+            label.setGeometry(0, 0, self.width(), self.height())
+
+        def resizeEvent(self, event):
+            if hasattr(self, 'label') and self.label is not None:
+                self.label.setGeometry(0, 0, self.width(), self.height())
+            super().resizeEvent(event)
+
+        def keyPressEvent(self, event):
+            self.close()
+
+        def mousePressEvent(self, event):
+            self.close()
+
+    intro = IntroWindow(image_path)
+    intro.show()
+    app = QApplication.instance()
+    while intro.isVisible():
+        app.processEvents()
+
 if __name__ == '__main__':
     app = QApplication([])
+    # Toon eerst dia1.jpg fullscreen
+    show_intro_image("dia1.jpg")
     overlay = TextOverlay()
     app.exec_() 
 

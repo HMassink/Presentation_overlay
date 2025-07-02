@@ -2,14 +2,14 @@
 2
 # Transparantie van de achtergrond
 0.7
-# Linkermarge in pixels
+# Linkermarge in pixels 
 50
 # Bovenmarge in pixels
 50
 # Schaal van het logo
 2
 # scherm
-1
+2
 
 # Hier beginnen de slides
 
@@ -20,80 +20,96 @@
 - Fluid Dynamics nerd
 - Unreal Engine nerd
 
-UNREAL FLUID DYNAMICS
-
-PROGRAM
-- Original idea
+CONTENT
+- Our Academy
+- Idea
+- Demo
 - Development process
-- Technical stuff
+- Technical details
 - "summative" use in education (over three years)
 - Ups and downs
 - Future
 - Questions
 
-ORGINAL IDEA
+ADGO 
+- Academy for Sustainable Built Environment
+- Architectural Engineering
+- Civil Engineering
+- Construction Business Administration
+- Spatial Planning and Development
+- 1600 students
+- 3 ICTO's
+- 80 Meta Quests
+
+IDEA
 - Civil Engineering is outside
 - Often huge projects (dikes, ditches, rivers, canals)
 - Difficult to do real scale in a lab
-- 3D VR learning environment
+- Tpack (knowledge, education, technology) 
+- 3D VR Immersive learning environment
 - Multiplayer
 - One has to do things (for example measure dimensions)
 - Effect of changes is made visible immediately
 - Show pressure and energy head
+- The avatar should resemble the real person.
+
+DEMO
 
 DEVELOPMENT PROCESS
 - 2010 Learning in 3D
 - 2013 – 2014 Master learning and innovation (open simulator)
 - 2016 Unreal Engine
-- 1 day a week plus
+- 1 day a week plus 
 - 2019 Unreal Academy and Udemy courses
 - 2020 Epic MegaGrant and unreal guru cedric
-- 2 day’s a week
+- 2 days a week 
 - 2021 and 2022 Gamedesigner Sander
 - 2022 – 2025 Used in course Water 2
 
-TECHNICAL STUFF
+TECHNICAL DETAILS
 - Unreal Engine 5
 - Blueprints and a lot of C++
 - Jetbrains Rider + github copilot  (free for educators)
-- Server and Clients (dedicated server)
+- Server and Clients (dedicated server setup)
 - 1 Avans windows server Unreal
-- 1 Avans windows server MongoDB
+- 1 Avans windows server MongoDB 
 - Client available on itch.io
 
-"SUMMATIVE" USE IN EDUCATION (OVER THREE YEARS)
-- Course Water 2 (3 credits)
-- 5 assignments , groups of three
+USE IN EDUCATION (OVER THREE YEARS)
+- Part of Course Water 2 (3 credits)
+- 5 assignments in groups of three
 - 5 day’s including feedback (dag van de student)
-- Summative
-- 150 CT students
+- Summative assessment
+- 150 students
 
 UPS AND DOWNS
-- Don’t call it a game, it is a learning environment.
-- Serious gaming is worse.
-- Formative is fun, Summative is not, it is about credits.
-- Students behave totally different in a 3D world. They go crazy
-- At first, they love it, and than it gets obligatory
-- Feedbackclass works
+- Don’t call it a game, it is a learning environment. 
+- “Serious gaming” sounds even worse
+- Formative use is fun; summative use is stressful (it’s about grades)
+- Students behave differently in 3D – they go wild
+- The avatar should resemble the real person?
+- At first, they love it – until it becomes mandatory
 
 UPS AND DOWNS
-- Updates, students get annoyed
+- Updates, students get annoyed 
 - Last minute changes, don’t do it
-- Students always believe the system
-- Something different / new, not all students like it
-- Support through teams, does not work. One should be present physically for help.
-- Most students don’t watch instruction video’s
+- Students always trust the system (even when it’s wrong)
+- Not all students appreciate new/different methods
+- Online support (e.g., Teams) doesn't work well – physical presence is key
+- Most students don’t watch instruction videos 
+- Feedback sessions are effective
 
 UPS AND DOWNS
-- I believe in Tpack (knowledge, education, technology)
-- Luckly, I did not know how much time :-)
+- Luckily, I didn’t know how much time it would take 😊
+- Although the goal is to save time 😊
 - I get energy from the project; I am a bit crazy
-- College's have other priorities
+- Colleagues have other priorities 
 
 FUTURE
 - My retirement 1-1-2026
-- Convai avatars
-- Worldwide accessible
+- Trained AI avatars using Convai
+- Standalone Meta Quest
+- Worldwide accessibility
 
 QUESTIONS?
 - Thanks for being here
